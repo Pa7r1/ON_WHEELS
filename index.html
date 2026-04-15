@@ -859,31 +859,23 @@
         text-transform: uppercase;
         transition:
           background 0.2s,
+          border-color 0.2s,
           transform 0.15s;
         -webkit-tap-highlight-color: transparent;
         border-radius: var(--radius);
         width: 100%;
-      }
-      .btn-social:active {
-        transform: scale(0.97);
-      }
-      .btn-social-ig {
-        background: var(--burg);
-        color: #fff;
-        border: 1.5px solid rgba(184, 45, 106, 0.4);
-      }
-      .btn-social-ig:hover {
-        background: var(--burg2);
-      }
-      .btn-social-event {
+        height: 100%;
         background: #fff;
         color: var(--txt2);
         border: 1.5px solid rgba(122, 15, 61, 0.25);
       }
-      .btn-social-event:hover {
+      .btn-social:hover {
         background: #fdf9fb;
         border-color: var(--burg2);
         color: var(--txt);
+      }
+      .btn-social:active {
+        transform: scale(0.97);
       }
 
       /* ── FOOTER ── */
@@ -1306,7 +1298,7 @@
           <a
             href="https://www.instagram.com/onwheels_14?igsh=Mjhjc2hhNG9wd3Qx"
             target="_blank"
-            class="btn-social btn-social-ig reveal"
+            class="btn-social reveal"
           >
             <svg width="26" height="26" viewBox="0 0 24 24" fill="none">
               <rect
@@ -1315,11 +1307,11 @@
                 width="20"
                 height="20"
                 rx="5"
-                stroke="#fff"
+                stroke="var(--txt2)"
                 stroke-width="1.8"
               />
-              <circle cx="12" cy="12" r="4" stroke="#fff" stroke-width="1.8" />
-              <circle cx="17.5" cy="6.5" r="1.2" fill="#fff" />
+              <circle cx="12" cy="12" r="4" stroke="var(--txt2)" stroke-width="1.8" />
+              <circle cx="17.5" cy="6.5" r="1.2" fill="var(--txt2)" />
             </svg>
             <div>
               <div
@@ -1338,7 +1330,7 @@
           <a
             href="https://www.instagram.com/transvelasco_oficial1"
             target="_blank"
-            class="btn-social btn-social-event reveal"
+            class="btn-social reveal"
           >
             <svg width="26" height="26" viewBox="0 0 24 24" fill="none">
               <rect
